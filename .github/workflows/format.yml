@@ -1,0 +1,19 @@
+name: Formatting
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  check-prettier-format:
+    name: Check Formatting (Prettier)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check formatting with Prettier
+        # Explicit commit, because this isn't tagged yet.
+        uses: actionsx/prettier@v3
+        with:
+          args: -c .

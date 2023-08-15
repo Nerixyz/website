@@ -105,16 +105,10 @@
                   />
                 </svg>
                 <h3>RewardMore</h3>
-                <span>
-                  An application that manages custom Twitch channel-point
-                  rewards for streamers.
-                </span>
+                <span> An application that manages custom Twitch channel-point rewards for streamers. </span>
               </article>
             </a>
-            <a
-              href="https://github.com/Nerixyz/current-song-overlay"
-              target="_blank"
-            >
+            <a href="https://github.com/Nerixyz/current-song2" target="_blank">
               <article class="ps-card" style="--card-hover-color: #c936ff">
                 <svg class="ps-card-icon" viewBox="0 0 24 24">
                   <path
@@ -122,13 +116,11 @@
                     d="M16,9H13V14.5A2.5,2.5 0 0,1 10.5,17A2.5,2.5 0 0,1 8,14.5A2.5,2.5 0 0,1 10.5,12C11.07,12 11.58,12.19 12,12.5V7H16V9M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M5,5V19H19V5H5Z"
                   />
                 </svg>
-                <h3>Current Song Overlay</h3>
+                <h3>Current Song2</h3>
                 <span>
-                  This is an application allowing (mostly) streamers to display
-                  the currently playing song. There's also an extension to get
-                  metadata and play progress from the browser. On Windows, it
-                  registers itself as a service which makes it easy to work with
-                  since it's in the autostart.
+                  An application allowing (mostly) streamers to display the currently playing song. It uses Windows'
+                  native media transport control to show instant updates of songs and play progress. The overlay is
+                  fully customizable through CSS and JS and ships in a single executable.
                 </span>
               </article>
             </a>
@@ -142,15 +134,12 @@
                 </svg>
                 <h3>Instagram MQTT</h3>
                 <span>
-                  Instagram Realtime and FBNS client allowing users to receive
-                  events like direct messages or notifications in realtime.
+                  Instagram Realtime and FBNS client allowing users to receive events like direct messages or
+                  notifications in realtime.
                 </span>
               </article>
             </a>
-            <a
-              href="https://github.com/dilame/instagram-private-api"
-              target="_blank"
-            >
+            <a href="https://github.com/dilame/instagram-private-api" target="_blank">
               <article class="ps-card" style="--card-hover-color: #ffa200">
                 <svg class="ps-card-icon" viewBox="0 0 24 24">
                   <path
@@ -160,9 +149,8 @@
                 </svg>
                 <h3>Instagram Private API</h3>
                 <span>
-                  This is a TypeScript library which is using Instagram's
-                  Android-API to allow the upload of media or viewing of
-                  profiles just to name a few. I'm one of the contributors.
+                  This is a TypeScript library which is using Instagram's Android-API to allow the upload of media or
+                  viewing of profiles just to name a few. I'm one of the contributors.
                 </span>
               </article>
             </a>
@@ -176,9 +164,8 @@
                 </svg>
                 <h3>Burp Insta Tools</h3>
                 <span>
-                  An extension written in Kotlin for Burp which prettifies and
-                  decompresses Instagram requests and responses to analyze them
-                  easily.
+                  An extension written in Kotlin for Burp which prettifies and decompresses Instagram requests and
+                  responses to analyze them easily.
                 </span>
               </article>
             </a>
@@ -187,20 +174,20 @@
       </main>
     </div>
     <script type="module">
-      const link = document.getElementById("discord-link");
-      link.addEventListener("click", (e) => {
+      const link = document.getElementById('discord-link');
+      link.addEventListener('click', e => {
         e.preventDefault();
-        navigator.clipboard.writeText("@nerixyz").catch(console.error);
-        link.style.zIndex = "200";
+        navigator.clipboard.writeText('@nerixyz').catch(console.error);
+        link.style.zIndex = '200';
         link
           .animate(
             {
-              transform: ["scale(1.1)", "scale(1.2)", "scale(1.1)"],
-              filter: ["brightness(1)", "brightness(2)", "brightness(1)"],
+              transform: ['scale(1.1)', 'scale(1.2)', 'scale(1.1)'],
+              filter: ['brightness(1)', 'brightness(2)', 'brightness(1)'],
             },
             { duration: 200 },
           )
-          .addEventListener("finish", () => delete link.style.zIndex);
+          .addEventListener('finish', () => delete link.style.zIndex);
       });
     </script>
   </body>

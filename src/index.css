@@ -16,6 +16,14 @@
     url("fonts/zilla-slab-v11-latin-700.woff") format("woff");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/inter-v13-latin-regular.woff2') format('woff2');
+}
+
 :root {
   --bg-color: #121212;
   --card-color: #2222224a;
@@ -82,6 +90,28 @@ h2 {
   justify-content: center;
 }
 
+.projects {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (width <= 1200px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 750px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects > a {
+  display: flex;
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -91,7 +121,7 @@ a {
   margin: var(--card-margin, 1.25rem);
   min-width: 8rem;
   max-width: 17rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 20px;
   background-color: var(--card-color);
   box-shadow:
@@ -132,6 +162,7 @@ a:focus-visible .ps-card {
 .ps-card span {
   font-weight: 400;
   text-align: justify;
+  font-family: 'Inter', sans-serif;
 }
 
 .card-list article:hover,

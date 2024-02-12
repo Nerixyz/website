@@ -18,10 +18,10 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/inter-v13-latin-regular.woff2') format('woff2');
+  src: url("fonts/inter-v13-latin-regular.woff2") format("woff2");
 }
 
 :root {
@@ -162,7 +162,7 @@ a:focus-visible .ps-card {
 .ps-card span {
   font-weight: 400;
   text-align: justify;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .card-list article:hover,

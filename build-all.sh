@@ -10,4 +10,5 @@ pip3 install -r requirements.txt;
 mkdocs build;
 popd;
 
-cp -r scripts/site/* dist/;
+mkdir -p dist/scripts;
+cp -r scripts/site/* dist/scripts/;

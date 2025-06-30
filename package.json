@@ -9,7 +9,7 @@
   "license": "MIT",
   "devDependencies": {
     "parcel": "^2.15.4",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "svgo": "^4.0.0"
   }
 }

@@ -7,7 +7,7 @@ pushd scripts;
 python -m venv venv;
 source venv/bin/activate;
 pip3 install -r requirements.txt;
-mkdocs build;
+zensical build;
 popd;
 
 mkdir -p dist/scripts;

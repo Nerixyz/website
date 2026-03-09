@@ -8,8 +8,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.16.1",
-    "prettier": "^3.7.3",
-    "svgo": "^4.0.0"
+    "parcel": "^2.16.4",
+    "prettier": "^3.8.1",
+    "svgo": "^4.0.1"
   }
 }

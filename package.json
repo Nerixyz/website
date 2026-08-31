@@ -10,6 +10,6 @@
   "devDependencies": {
     "parcel": "^2.16.4",
     "prettier": "^3.9.6",
-    "svgo": "^4.0.2"
+    "svgo": "^4.1.0"
   }
 }
